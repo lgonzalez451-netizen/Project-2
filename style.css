@@ -1,15 +1,17 @@
-div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
+
+.Games {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+   margin-top: 40px;
 }
 
-div.scroll-container img {
-  padding: 10px;
-width: 1250px;
-  height: 800px;
+.Games img {
+    width: 20%;
+    height: auto;
 }
+
 
 body {
   background-color:   #25213B;
@@ -17,7 +19,28 @@ body {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  "erbaum", sans-serif;
+  font-size: 2.5rem;
+  gap: 5px;
+width: auto;
+}
+
+h2 {
+  font-family:  "erbaum", sans-serif;
+}
+a {
+  width: auto;
+}
+
+p {
+  font-family: "erbaum", sans-serif;
+  gap: 5px;
+  display: flex;
+  flex-direction:column;
+  align-items: end;
+  padding: 10px;
+  width: auto;
+  font-size: large;
 }
 
 .nav-list { 
@@ -64,11 +87,11 @@ h1 {
 }
 
 .logo {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: grid;
+place-items: center;
+height: auto;
+margin-left: auto;
+margin-right: auto;
 }
 
 .main-content {
@@ -78,3 +101,80 @@ h1 {
   height: 100vh;
 }
 
+
+footer {
+    margin-top: 100px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.search {
+width: 40%;
+height: 10%;
+background-color: #333;
+display: grid;
+align-items: baseline;
+margin-left: auto;
+margin-right: auto;
+color: white;
+font-size: large;
+}
+
+.motto {
+  font-family: "bitcount-mono-single-square", sans-serif;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.question {
+  font-family: "bitcount-mono-single-square", sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 100px;  
+  padding: auto;
+  margin: auto;
+  padding-top: 150px;
+}
+
+.homemain {
+  background-image: url("thumb-1920-1074972.jpg");
+max-width: auto;
+height: 100%;
+margin-top: 20px;
+}
+
+.answer{
+  margin: auto;
+  margin-bottom: 200px;
+  padding-top: auto;
+  padding-bottom: 200px;
+}
+
+.homefooter{
+margin-top: 300px;
+padding: 20px;
+}
+
+iframe {
+    display: flexbox;
+    justify-content: baseline;
+    margin: 30px auto;
+    max-width: 100%;
+}
+
+.Video-Section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 40px;
+}
+
+.Video-Text {
+    flex: 1;
+}
+
+.Video {
+    flex-shrink: 0;
+}
