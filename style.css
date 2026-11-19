@@ -1,11 +1,5 @@
 
-.Games {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    gap: 5px;
-   margin-top: 40px;
-}
+
 
 .Games img {
     width: 20%;
@@ -49,6 +43,7 @@ p {
   padding: 0;
   margin: 0;
   gap: 24px;
+  border: 1px solid #E3DAF4;
 }
 
 .nav-list a {
@@ -106,7 +101,7 @@ footer {
     margin-top: 100px;
     background-color: #222;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 20px;
 }
 
@@ -120,6 +115,7 @@ margin-left: auto;
 margin-right: auto;
 color: white;
 font-size: large;
+margin-bottom: 20px;
 }
 
 .motto {
@@ -132,18 +128,13 @@ font-size: large;
   font-family: "bitcount-mono-single-square", sans-serif;
   text-align: center;
   font-size: xx-large;
-  margin-top: 100px;  
+  margin-top: 50px;  
   padding: auto;
   margin: auto;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
-.homemain {
-  background-image: url("thumb-1920-1074972.jpg");
-max-width: auto;
-height: 100%;
-margin-top: 20px;
-}
+
 
 .answer{
   margin: auto;
@@ -177,4 +168,102 @@ iframe {
 
 .Video {
     flex-shrink: 0;
+}
+
+
+.search-highlight {
+    background-color: yellow;
+    transition: background-color 2s ease;
+}
+
+.homemain {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.background-slideshow {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  margin-top: 10px;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    background-size: auto auto;
+    background-position: center;
+    opacity: 0;
+    animation: fadeSlideshow 15s infinite;
+}
+
+.slide1 {
+    background-image: url("thumb-1920-1074972.jpg");
+    animation-delay: 0s;
+}
+
+.slide2 {
+    background-image: url("thumb-1920-798682.png");
+    animation-delay: 5s;
+}
+
+.slide3 {
+    background-image: url("thumb-1920-752319.jpg");
+    animation-delay: 10s;
+}
+
+.slide4 {
+    background-image: url("1280px-Papers._Please.svg.webp");
+    animation-delay: 15s;
+}
+
+.slide5 {
+    background-image: url("Blasphemous_2.jpg");
+    animation-delay: 20s;
+}
+
+.slide6 {
+    background-image: url("images.jpg");
+    animation-delay: 25s;
+}
+
+@keyframes fadeSlideshow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+.logo3 {
+display: grid;
+place-items: center;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 0px;
+}
+
+a:link, a:visited {
+  display: inline-block;
+}
+
+.gameinfo {
+border: 1px solid #E3DAF4;
+}
+
+.steam-link {
+color: #54c0ff;
+}
+
+.cyan {
+  color: #54c0ff;
+  text-decoration: none;
 }
